@@ -425,20 +425,21 @@ requestAnimationFrame(render);
 
 
 // Modal
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
+var aboutModal = document.getElementById("aboutModal");
+var aboutBtn = document.getElementById("aboutBtn");
+var writingsModal = document.getElementById("writingsModal");
+var writingsBtn = document.getElementById("writingsBtn");
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+aboutBtn.onclick = function() { aboutModal.style.display = "block"; }
+writingsBtn.onclick = function() { writingsModal.style.display = "block"; }
 
 span.onclick = function() {
-  modal.style.display = "none";
+  aboutModal.style.display = "none";
+  writingsModal.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+  if (event.target == aboutModal) { aboutModal.style.display = "none"; }
+  if (event.target == writingsModal) { writingsModal.style.display = "none"; }
 }
