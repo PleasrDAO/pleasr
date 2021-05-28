@@ -231,17 +231,21 @@ video {
   color:rgba(255,255,255,.5);
 }
 
-a .twitter-bird-container {
+a .social-icon-container {
   width: 24px;
   height: 24px;
 }
 
-.twitter-bird {
+.social-icon {
   height: 24px;
   width: 24px;
   fill: rgba(255,255,255,.5);
 }
 
 .modal-section {
+  padding: .5rem 0;
+}
+
+.about-section {
   padding: .5rem 0;
 }
