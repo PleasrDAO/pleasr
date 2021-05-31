@@ -427,16 +427,20 @@ requestAnimationFrame(render);
 // Modal
 var aboutModal = document.getElementById("aboutModal");
 var aboutBtn = document.getElementById("aboutBtn");
+var aboutClose = document.getElementById("aboutClose");
 var writingsModal = document.getElementById("writingsModal");
 var writingsBtn = document.getElementById("writingsBtn");
-var span = document.getElementsByClassName("close")[0];
+var writingsClose = document.getElementById("writingsClose");
 
 aboutBtn.onclick = function() { aboutModal.style.display = "block"; }
 writingsBtn.onclick = function() { writingsModal.style.display = "block"; }
 
-span.onclick = function() {
-  aboutModal.style.display = "none";
+writingsClose.onclick = function() {
   writingsModal.style.display = "none";
+}
+
+aboutClose.onclick = function() {
+  aboutModal.style.display = "none";
 }
 
 window.onclick = function(event) {
