@@ -37,18 +37,21 @@ const itemProps = [
     src: 'video7',
     aspect: 1,
     title: 'Apes Together Strong',
+    link: 'https://gallery.so/nft/0x3b3ee1931dc30c1957379fac9aba94d1c48a5405/34009',
     by: 'pplpleasr',
   },
   {
     src: 'img/doge.webp',
     aspect: 640 / 480,
     title: 'Doge',
+    link: 'https://gallery.so/nft/0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7/3366',
     by: 'kabosumama',
   },
   {
     src: 'img/snowden.jpg',
     aspect: 1000 / 1294,
     title: 'Stay Free (Edward Snowden)',
+    link: 'https://gallery.so/nft/0x3b3ee1931dc30c1957379fac9aba94d1c48a5405/24437',
     by: 'Snowden',
     activeZ: 2.7,
     scale: 2,
@@ -57,6 +60,7 @@ const itemProps = [
     src: 'video2',
     aspect: 1,
     title: '数人が理解',
+    link: 'https://gallery.so/nft/0x103c167386dbc3d73c208e3e89ef0c79e7a44f60/1',
     by: 'pplpleasr',
   },
   {
@@ -64,41 +68,48 @@ const itemProps = [
     aspect: 600 / 450,
     by: 'pplpleasr',
     title: 'すごい!!!',
+    link: 'https://gallery.so/nft/0x103c167386dbc3d73c208e3e89ef0c79e7a44f60/16',
   },
   {
     src: 'img/01.jpg',
     aspect: 1,
     title: 'Dank Elon',
+    link: 'https://gallery.so/nft/0xd07dc4262bcdbf85190c01c996b4c06a461d2430/175023',
     by: 'MCE'
   },  
   {
     src: 'video4',
     aspect: 1,
     title: 'All Aboard',
+    link: 'https://gallery.so/nft/0x529b6787c72a6c56b8baf5c758d95f99d2dfcf0d/8',
     by: 'bluekirbyfi',
   },
   {
     src: 'video8',
     aspect: 824 / 456,
     title: 'x*y=k',
+    link: 'https://gallery.so/nft/0x3b3ee1931dc30c1957379fac9aba94d1c48a5405/13623',
     by: 'pplpleasr',
   },  
   {
     src: 'video6',
     aspect: 500 / 606,
     title: 'ETH Bruh',
+    link: 'https://gallery.so/nft/0x495f947276749ce646f68ac8c248420045cb7b5e/11723913639088541096555610954488415539866140515007526431883475262741141258241',
     by: 'pplpleasr',
   },
   {
     src: 'video5',
     aspect: 1,
     title: 'Safe Keeping',
+    link: 'https://gallery.so/nft/0x529b6787c72a6c56b8baf5c758d95f99d2dfcf0d/4',
     by: 'bluekirbyfi'
   },    
   {
     src: 'video9',
     aspect: 654 / 820,
     title: 'Dreaming at Dusk',
+    link: 'https://gallery.so/nft/0x3b3ee1931dc30c1957379fac9aba94d1c48a5405/35855',
     by: 'ixshells',
     activeZ: 2.7,
     scale: 2,
@@ -137,6 +148,7 @@ let hoveredItem;
 
 document.addEventListener( 'mousemove', handleMouseMove );
 document.addEventListener('click', handleClick);
+itemTitleEl.addEventListener('click',openGalleryItem);
 
 function handleClick() {
   if (intersections[0] && intersections[0].object !== activeItem) {
@@ -174,6 +186,11 @@ function activateItem() {
   document.body.classList.add('isActive');
   itemTitleEl.innerHTML = itemProps[activeItem.index].title;
   itemByEl.innerHTML = itemProps[activeItem.index].by;
+}
+
+function openGalleryItem(item) {
+  console.log(itemProps[activeItem.index].link)
+  window.open(itemProps[activeItem.index].link, '_blank');
 }
 
 /*
