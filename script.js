@@ -40,6 +40,12 @@ const itemProps = [
     by: 'pplpleasr',
   },
   {
+    src: 'img/doge.webp',
+    aspect: 640 / 480,
+    title: 'Doge',
+    by: 'kabosumama',
+  },
+  {
     src: 'img/snowden.jpg',
     aspect: 1000 / 1294,
     title: 'Stay Free (Edward Snowden)',
@@ -264,7 +270,7 @@ for (let i=0; i < emojiCount; i++) {
 function createItem(i) {
   setTimeout(() => {
     const props = itemProps[i];
-    const texture = props.src.substr(-3) === 'jpg' ? new THREE.TextureLoader().load( props.src ) : new THREE.VideoTexture( document.getElementById( props.src ) );
+    const texture = props.src.substr(-3) === 'jpg' || props.src.substr(-3) === 'png' || props.src.substr(-4) === 'webp' ? new THREE.TextureLoader().load( props.src ) : new THREE.VideoTexture( document.getElementById( props.src ) );
     const scale = props.scale ? props.scale : 1;
     const geometry = new THREE.BoxBufferGeometry(.08 * props.aspect * scale, .08 * scale, .003);
     const material = new THREE.MeshPhongMaterial({ 
