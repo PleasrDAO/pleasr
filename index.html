@@ -2,50 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PleasrDAO</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PBYC1WHB4T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PleasrDAO</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PBYC1WHB4T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-PBYC1WHB4T');
-  </script>
+        gtag('config', 'G-PBYC1WHB4T');
+    </script>
 </head>
 
 <body>
-  <header>
-    <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu"><span
-        class="sr-only">Open main menu</span><span class="" aria-hidden="true"><img src="img/menu.svg"
-          alt=""></span></a>
-    <div class="logo-container">
-      <span id="sparkles">✨</span><img src="img/pleasr-logo.svg" id="logo" alt=""></li>
-    </div>
+    <header>
+        <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu"><span
+                class="sr-only">Open main menu</span><span class="" aria-hidden="true"><img src="img/menu.svg"
+                    alt=""></span></a>
+        <div class="logo-container">
+            <span id="sparkles">✨</span><img src="img/pleasr-logo.svg" id="logo" alt=""></li>
+        </div>
 
-    <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
 
-      <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu"><span
-          class="sr-only">Close main menu</span><span class="" aria-hidden="true"><img src="img/close.svg"
-            alt=""></span></a>
-      <h2 id="main-menu-heading" class="sr-only">Main menu</h2>
-      <ul aria-labelledby="main-menu-heading" class="nav list-style-none">
-        <li class="h4"><a href="https://gallery.so/pleasrdao" target=”_blank">Gallery</a></li>
-        <li class="h4"><a href="#" id="writingsBtn">About</a></li>
-        <li class="h4"><a href="#" id="aboutBtn">Members</a></li>
-        <li class="social-icon-container"><a target="_blank" href="https://twitter.com/PleasrDAO" class=""><img
-              src="img/twitter.svg" class="social-icon" alt=""></a></a></li>
-        <!--<li class="social-icon-container"><a target="_blank" href="" class=""><img src="img/discord.svg" class="social-icon" alt=""></a></li>-->
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu"><span
+                    class="sr-only">Close main menu</span><span class="" aria-hidden="true"><img src="img/close.svg"
+                        alt=""></span></a>
+            <h2 id="main-menu-heading" class="sr-only">Main menu</h2>
+            <ul aria-labelledby="main-menu-heading" class="nav list-style-none">
+                <li class="h4"><a href="https://gallery.so/pleasrdao" target=”_blank">Gallery</a></li>
+                <li class="h4"><a href="https://pleasr.mirror.xyz" target=”_blank">Blog</a></li>
+                <li class="h4"><a href="#" id="writingsBtn">About</a></li>
+                <li class="h4"><a href="#" id="aboutBtn">Members</a></li>
+                <li class="social-icon-container"><a target="_blank" href="https://twitter.com/PleasrDAO" class=""><img
+                            src="img/twitter.svg" class="social-icon" alt=""></a></a></li>
+                <!--<li class="social-icon-container"><a target="_blank" href="" class=""><img src="img/discord.svg" class="social-icon" alt=""></a></li>-->
 
-      </ul>
+            </ul>
 
-      <!-- <ul class="nav list-style-none">
+            <!-- <ul class="nav list-style-none">
         <li>
           <div>
             <span id="sparkles">✨</span><img src="img/pleasr-logo.svg" id="logo" alt=""></li>
@@ -56,21 +57,33 @@
             <li class="h4"><a href="#" id="aboutBtn">About</a></li>
           </div>
       </ul> -->
-    </nav>
-    <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-  </header>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+    </header>
 
-  <!-- Writings modal -->
-  <div id="writingsModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="writingsClose">&times;</span>
-      <div class="modal-section">
-        <h4 class="h4">About</h4>
-        <p>PleasrDAO is a collective of DeFi leaders, early NFT collectors and digital artists who have built a formidable yet benevolent reputation for acquiring culturally significant pieces with a charitable twist.</p>
-        <p>Since the DAO purchased its genesis piece, pplpleasr’s Uniswap V3 NFT, the DAO has evolved and elevated its mission to collect digital art that represents and funds important ideas, movements and causes that have been memorialized on-chain as NFTs. PleasrDAO has set a precedent for bidding on unique pieces, many of which have powerful messages that transcend crypto.</p>
-        <p>Dubbed as an art collecting empire, the DAO is experimenting with novel concepts in digital and community art ownership. Its members are exploring ideas such as fractionalizing iconic pieces to be distributed to, and owned by, the community. However, beyond just shared ownership of these pieces, the collective plans to apply creative innovations within DeFi to add and disseminate value. In a way, the DAO is a platform for collective experimentation at the nexus of community ownership, DeFi, and digital art.</p>
-        <p>In essence, the DAO’s modus operandi is to buy and fund culturally significant pieces and then create something fundamentally additive to the soul of the piece before sharing it back with the community.</p>
-<!--         <ul class="team">
+    <!-- Writings modal -->
+    <div id="writingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="writingsClose">&times;</span>
+            <div class="modal-section">
+                <h4 class="h4">About</h4>
+                <p>PleasrDAO is a collective of DeFi leaders, early NFT collectors and digital artists who have built a
+                    formidable yet benevolent reputation for acquiring culturally significant pieces with a charitable
+                    twist.</p>
+                <p>Since the DAO purchased its genesis piece, pplpleasr’s Uniswap V3 NFT, the DAO has evolved and
+                    elevated its mission to collect digital art that represents and funds important ideas, movements and
+                    causes that have been memorialized on-chain as NFTs. PleasrDAO has set a precedent for bidding on
+                    unique pieces, many of which have powerful messages that transcend crypto.</p>
+                <p>Dubbed as an art collecting empire, the DAO is experimenting with novel concepts in digital and
+                    community art ownership. Its members are exploring ideas such as fractionalizing iconic pieces to be
+                    distributed to, and owned by, the community. However, beyond just shared ownership of these pieces,
+                    the collective plans to apply creative innovations within DeFi to add and disseminate value. In a
+                    way, the DAO is a platform for collective experimentation at the nexus of community ownership, DeFi,
+                    and digital art.</p>
+                <p>In essence, the DAO’s modus operandi is to buy and fund culturally significant pieces and then create
+                    something fundamentally additive to the soul of the piece before sharing it back with the community.
+                </p>
+                <!--         <ul class="team">
           <li class="member">
             <a class="handle" target="_blank"
               href="https://pleasr.mirror.xyz/D9wIadL-5EEkt17glTtar21m3RDqfgkhkr__OEE2mOE">
@@ -78,154 +91,165 @@
             </a>
           </li>
         </ul> -->
-      </div>
+            </div>
 
+        </div>
     </div>
-  </div>
 
-  <!-- Team modal -->
-  <div id="aboutModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="aboutClose">&times;</span>
-      <div class="about-section">
-        <h4 class="h4">Members</h4>
-        <ul class="team">
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/_jamiis">Jamis Johnson</a><span
-              class="title">Chief Pleasing Officer</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/lay2000lbs">Leighton
-              Cusack</a><span class="title">PoolTogether</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Rewkang">Andrew Kang</a><span
-              class="title">Mechanism Capital</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/tarunchitra">Tarun
-              Chitra</a><span class="title">Gauntlet, Robot Ventures</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/TrustlessState">David
-              Hoffman</a><span class="title">Bankless, PoV Crypto</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/tomhschmidt">Tom
-              Schmidt</a><span class="title">Dragonfly Capital, 0x</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/bluekirbyfi">Blue
-              Kirby</a><span class="title">Blue Kirby</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/rleshner">Robert
-              Leshner</a><span class="title">Compound, Robot Ventures</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/santiagoroel">Santiago R
-              Santos</a><span class="title">DeFi Investor</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Daryllautk">Daryl Lau</a><span
-              class="title">Mechanism Capital</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/bneiluj">Julien
-              Bouteloup</a><span class="title">Rekt, Curve, StakeDAO</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Tetranode">Tetranode</a><span
-              class="title">OG Gigawhale</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/benjaminsimon97">Ben
-              Simon</a><span class="title">Mechanism Capital</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/cjliu49">Calvin Liu</a><span
-              class="title">Divergence Capital, Compound</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/androolloyd">Andrew
-              Redden</a><span class="title">Z Capital</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/notscottmoore">Scott
-              Moore</a><span class="title">Gitcoin</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/ASvanevik">Alex
-              Svanevik</a><span class="title">Nansen</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/pplpleasr1">pplpleasr</a><span
-              class="title">OG DeFi artist</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/zhusu">Su Zhu</a><span
-              class="title">3 Arrows Capital</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/leokcheng">Leo Cheng</a><span
-              class="title">C.R.E.A.M.</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/StaniKulechov">Stani</a><span
-              class="title">Aave</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/gmoneyNFT">Gmoney</a><span
-              class="title">NFT Collector</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/nanexcool">Mariano
-              Conti</a><span class="title">Project X</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/DeFi_Ted">DeFi Ted</a><span
-              class="title">Cover, Ruler</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/andy8052">Andy8052</a><span
-              class="title">Fractional, TopShots Fame</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Darrenlautf">Darren
-              Lau</a><span class="title">Spartan, The Daily Ape</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/PopcornKirby">Popcorn
-              Kirby</a><span class="title">Trader</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/euwyn">Euwyn Poon</a><span
-              class="title">YC Alum</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/dcarmitage">Daniel
-              Armitage</a><span class="title">Nansen</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/machibigbrother">Jeffrey
-              Huang</a><span class="title">C.R.E.A.M.</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/gpl_94">George Lambeth</a><span
-              class="title">Divergence Capital</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/JeremyKerbel">Jeremy
-              Kerbel</a><span class="title">Kerve Capital, CXIP</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/scottburke777">Scott
-              Burke</a><span class="title">Z Capital</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/mrblocktw">mrblock</a><span
-              class="title">Curve, mrblock.tw, 區塊先生</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/LordTylerWard">Tyler
-              Ward</a><span class="title">BarnBridge, Universe.XYZ</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/alive_eth">Ali Yahya</a><span
-              class="title">a16z</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/BlockchainJames">James
-              Waugh</a><span class="title">Fire Eyes DAO, MetaCartel, Venture DAO</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Cooopahtroopa">Cooper
-              Turley</a><span class="title">Fire Eyes DAO, Audius, FWB</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/mattgcondon">Matt
-              Condon</a><span class="title">themanymatts.lol, OG NFT</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Fiskantes">Fiskantes</a><span
-              class="title">Crypto Trader</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/RAC">RAC</a><span
-              class="title">Grammy Award Winning Musician, sixtNFT</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/jessewldn">Jesse
-              Walden</a><span class="title">Variant Fund</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/spencernoon">Spencer
-              Noon</a><span class="title">Variant Fund</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/ljin18">Li Jin</a><span
-              class="title">Atelier Ventures</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/dgntec">DT</a><span
-              class="title">Fingerprints DAO</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/flohagenbuch">Flo</a><span
-              class="title">Loft, Canary Ventures</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/mewn21">Mewny</a><span
-              class="title">Couch, Cryptonative</span></li>
-          <li class="member"><a class="handle" target="_blank"
-              href="https://twitter.com/redphonecrypto">RedPhoneCrypto</a><span class="title">Crypto Storyteller</span>
-          </li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/wvaeu">Eva W.</a><span
-              class="title">Mechanism Capital, Komorebi Fund, she256</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://twitter.com/WarcMeinstein">Marc
-              Weinstein</a><span class="title">Mechanism Capital</span></li>
-          <li class="member"><a class="handle" target="_blank" href="https://bfy.tw/R9pW">Peter Cusack</a><span
-              class="title">Degeneratively Degen</span></li>
-        </ul>
-      </div>
+    <!-- Team modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="aboutClose">&times;</span>
+            <div class="about-section">
+                <h4 class="h4">Members</h4>
+                <ul class="team">
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/_jamiis">Jamis
+                            Johnson</a><span class="title">Chief Pleasing Officer</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/lay2000lbs">Leighton
+                            Cusack</a><span class="title">PoolTogether</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Rewkang">Andrew
+                            Kang</a><span class="title">Mechanism Capital</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/tarunchitra">Tarun
+                            Chitra</a><span class="title">Gauntlet, Robot Ventures</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/TrustlessState">David
+                            Hoffman</a><span class="title">Bankless, PoV Crypto</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/tomhschmidt">Tom
+                            Schmidt</a><span class="title">Dragonfly Capital, 0x</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/bluekirbyfi">Blue
+                            Kirby</a><span class="title">Blue Kirby</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/rleshner">Robert
+                            Leshner</a><span class="title">Compound, Robot Ventures</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/santiagoroel">Santiago R
+                            Santos</a><span class="title">DeFi Investor</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Daryllautk">Daryl
+                            Lau</a><span class="title">Mechanism Capital</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/bneiluj">Julien
+                            Bouteloup</a><span class="title">Rekt, Curve, StakeDAO</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/Tetranode">Tetranode</a><span class="title">OG Gigawhale</span>
+                    </li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/benjaminsimon97">Ben
+                            Simon</a><span class="title">Mechanism Capital</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/cjliu49">Calvin
+                            Liu</a><span class="title">Divergence Capital, Compound</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/androolloyd">Andrew
+                            Redden</a><span class="title">Z Capital</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/notscottmoore">Scott
+                            Moore</a><span class="title">Gitcoin</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/ASvanevik">Alex
+                            Svanevik</a><span class="title">Nansen</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/pplpleasr1">pplpleasr</a><span class="title">OG DeFi artist</span>
+                    </li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/zhusu">Su
+                            Zhu</a><span class="title">3 Arrows Capital</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/leokcheng">Leo
+                            Cheng</a><span class="title">C.R.E.A.M.</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/StaniKulechov">Stani</a><span class="title">Aave</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/gmoneyNFT">Gmoney</a><span class="title">NFT Collector</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/nanexcool">Mariano
+                            Conti</a><span class="title">Project X</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/DeFi_Ted">DeFi
+                            Ted</a><span class="title">Cover, Ruler</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/andy8052">Andy8052</a><span class="title">Fractional, TopShots
+                            Fame</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Darrenlautf">Darren
+                            Lau</a><span class="title">Spartan, The Daily Ape</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/PopcornKirby">Popcorn
+                            Kirby</a><span class="title">Trader</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/euwyn">Euwyn
+                            Poon</a><span class="title">YC Alum</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/dcarmitage">Daniel
+                            Armitage</a><span class="title">Nansen</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/machibigbrother">Jeffrey
+                            Huang</a><span class="title">C.R.E.A.M.</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/gpl_94">George
+                            Lambeth</a><span class="title">Divergence Capital</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/JeremyKerbel">Jeremy
+                            Kerbel</a><span class="title">Kerve Capital, CXIP</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/scottburke777">Scott
+                            Burke</a><span class="title">Z Capital</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/mrblocktw">mrblock</a><span class="title">Curve, mrblock.tw,
+                            區塊先生</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/LordTylerWard">Tyler
+                            Ward</a><span class="title">BarnBridge, Universe.XYZ</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/alive_eth">Ali
+                            Yahya</a><span class="title">a16z</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/BlockchainJames">James
+                            Waugh</a><span class="title">Fire Eyes DAO, MetaCartel, Venture DAO</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/Cooopahtroopa">Cooper
+                            Turley</a><span class="title">Fire Eyes DAO, Audius, FWB</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/1ofthemanymatts">Matt
+                            Condon</a><span class="title">themanymatts.lol, NFT OG</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/Fiskantes">Fiskantes</a><span class="title">Crypto Trader</span>
+                    </li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/RAC">RAC</a><span
+                            class="title">Grammy Award Winning Musician, sixtNFT</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/jessewldn">Jesse
+                            Walden</a><span class="title">Variant Fund</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/spencernoon">Spencer
+                            Noon</a><span class="title">Variant Fund</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/ljin18">Li
+                            Jin</a><span class="title">Atelier Ventures</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/dgntec">DT</a><span
+                            class="title">Fingerprints DAO</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/flohagenbuch">Flo</a><span class="title">Loft, Canary
+                            Ventures</span></li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/mewn21">Mewny</a><span class="title">Couch, Cryptonative</span>
+                    </li>
+                    <li class="member"><a class="handle" target="_blank"
+                            href="https://twitter.com/redphonecrypto">RedPhoneCrypto</a><span class="title">Crypto
+                            Storyteller</span>
+                    </li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/wvaeu">Eva
+                            W.</a><span class="title">Mechanism Capital, Komorebi Fund, she256</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://twitter.com/WarcMeinstein">Marc
+                            Weinstein</a><span class="title">Mechanism Capital</span></li>
+                    <li class="member"><a class="handle" target="_blank" href="https://bfy.tw/R9pW">Peter
+                            Cusack</a><span class="title">Degeneratively Degen</span></li>
+                </ul>
+            </div>
 
+        </div>
     </div>
-  </div>
 
-  <div id="app"></div>
-  <div class="sparkle">✨</div>
-  <div class="item__details">
-    <h1 class="item__title"></h1>
-    <h2 class="item__by"></h2>
-  </div>
-  <video id="video2" src="img/02.mp4" autoplay muted playsinline loop></video>
-  <video id="video3" src="img/03.mp4" autoplay muted playsinline loop></video>
-  <video id="video4" src="img/04.mp4" autoplay muted playsinline loop></video>
-  <video id="video5" src="img/05.mp4" autoplay muted playsinline loop></video>
-  <video id="video6" src="img/06.mp4" autoplay muted playsinline loop></video>
-  <video id="video9" src="img/09.mp4" autoplay muted playsinline loop></video>
-  <video id="video7" src="img/07.mp4" autoplay muted playsinline loop></video>
-  <video id="video8" src="img/08.mp4" autoplay muted playsinline loop></video>
-  <div class="closeX">╳</div>
+    <div id="app"></div>
+    <div class="sparkle">✨</div>
+    <div class="item__details">
+        <h1 class="item__title"></h1>
+        <h2 class="item__by"></h2>
+    </div>
+    <video id="video2" src="img/02.mp4" autoplay muted playsinline loop></video>
+    <video id="video3" src="img/03.mp4" autoplay muted playsinline loop></video>
+    <video id="video4" src="img/04.mp4" autoplay muted playsinline loop></video>
+    <video id="video5" src="img/05.mp4" autoplay muted playsinline loop></video>
+    <video id="video6" src="img/06.mp4" autoplay muted playsinline loop></video>
+    <video id="video9" src="img/09.mp4" autoplay muted playsinline loop></video>
+    <video id="video7" src="img/07.mp4" autoplay muted playsinline loop></video>
+    <video id="video8" src="img/08.mp4" autoplay muted playsinline loop></video>
+    <div class="closeX">╳</div>
 
-  <footer>
-    <nav>
-      <ul class="nav list-style-none">
-        <li><span id="copyright">© 2021 PleasrDAO</span></li>
-        <!-- <div class="nav-right">
+    <footer>
+        <nav>
+            <ul class="nav list-style-none">
+                <li><span id="copyright">© 2021 PleasrDAO</span></li>
+                <!-- <div class="nav-right">
           <li class="social-icon-container"><a target="_blank" href="https://twitter.com/PleasrDAO" class=""><svg viewBox="0 0 24 24" aria-hidden="true" class="social-icon"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg></a></li>
           <li class="social-icon-container"><a target="_blank" href="" class=""><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240" class="social-icon"><path class="st0" d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"/><path class="st0" d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z"/></svg></a></li>
         </div> -->
-      </ul>
-    </nav>
-  </footer>
+            </ul>
+        </nav>
+    </footer>
 </body>
 <script src="script.js"></script>
 
