@@ -37,21 +37,21 @@ const itemProps = [
     src: 'video7',
     aspect: 1,
     title: 'Apes Together Strong',
-    link: 'https://gallery.so/nft/0x3b3ee1931dc30c1957379fac9aba94d1c48a5405/34009',
+    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/89682699f426e944a4deb92b78d76a0f',
     by: 'pplpleasr',
   },
   {
     src: 'img/doge.webp',
     aspect: 640 / 480,
     title: 'Doge',
-    link: 'https://gallery.so/nft/0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7/3366',
+    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/6771f6edb51b930821f424452e1707b4',
     by: 'kabosumama',
   },
   {
     src: 'img/snowden.jpg',
     aspect: 1000 / 1294,
     title: 'Stay Free (Edward Snowden)',
-    link: 'https://gallery.so/nft/0x3b3ee1931dc30c1957379fac9aba94d1c48a5405/24437',
+    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/3ff32ab2f1de707b1aad0db3b923043b',
     by: 'Snowden',
     activeZ: 2.7,
     scale: 2,
@@ -74,45 +74,52 @@ const itemProps = [
     src: 'img/01.jpg',
     aspect: 1,
     title: 'Dank Elon',
-    link: 'https://gallery.so/nft/0xd07dc4262bcdbf85190c01c996b4c06a461d2430/175023',
+    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/21fddedb024b387af811eda4b217a40a',
     by: 'MCE'
   },  
   {
     src: 'video4',
     aspect: 1,
     title: 'All Aboard',
-    link: 'https://gallery.so/nft/0x529b6787c72a6c56b8baf5c758d95f99d2dfcf0d/8',
+    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/43ba723f9a3de55b7349e2bbcb59ba3d',
     by: 'bluekirbyfi',
   },
   {
     src: 'video8',
     aspect: 824 / 456,
     title: 'x*y=k',
-    link: 'https://gallery.so/nft/0x3b3ee1931dc30c1957379fac9aba94d1c48a5405/13623',
+    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/b20ec30974c2646877e1e4a8adedacb1',
     by: 'pplpleasr',
   },  
   {
     src: 'video6',
     aspect: 500 / 606,
     title: 'ETH Bruh',
-    link: 'https://gallery.so/nft/0x495f947276749ce646f68ac8c248420045cb7b5e/11723913639088541096555610954488415539866140515007526431883475262741141258241',
+    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/32a6a539a02e4f20f995391f1a940174',
     by: 'pplpleasr',
   },
   {
     src: 'video5',
     aspect: 1,
     title: 'Safe Keeping',
-    link: 'https://gallery.so/nft/0x529b6787c72a6c56b8baf5c758d95f99d2dfcf0d/4',
+    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/a744793a62fcfec548ebe4bc0d701d68',
     by: 'bluekirbyfi'
   },    
   {
     src: 'video9',
     aspect: 654 / 820,
     title: 'Dreaming at Dusk',
-    link: 'https://gallery.so/nft/0x3b3ee1931dc30c1957379fac9aba94d1c48a5405/35855',
+    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/e6509e3766fe38f742b71714a92ff675',
     by: 'ixshells',
     activeZ: 2.7,
     scale: 2,
+  },
+  {
+    src: 'img/11.jpg',
+    aspect: 1,
+    title: 'Once Upon a Time in Shaolin',
+    link: 'https://pleasr.mirror.xyz/PTzSIYe6LbNW55i_Jo4S_fgqIiDp3d7YblpikQ1iRks',
+    by: 'Wu-Tang Clan'
   }
 ]
 
