@@ -69,21 +69,7 @@ const itemProps = [
     by: 'pplpleasr',
     title: 'すごい!!!',
     link: 'https://gallery.so/nft/0x103c167386dbc3d73c208e3e89ef0c79e7a44f60/16',
-  },
-  {
-    src: 'img/01.jpg',
-    aspect: 1,
-    title: 'Dank Elon',
-    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/21fddedb024b387af811eda4b217a40a',
-    by: 'MCE'
-  },  
-  {
-    src: 'video4',
-    aspect: 1,
-    title: 'All Aboard',
-    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/43ba723f9a3de55b7349e2bbcb59ba3d',
-    by: 'bluekirbyfi',
-  },
+  }, 
   {
     src: 'video8',
     aspect: 824 / 456,
@@ -97,14 +83,7 @@ const itemProps = [
     title: 'ETH Bruh',
     link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/32a6a539a02e4f20f995391f1a940174',
     by: 'pplpleasr',
-  },
-  {
-    src: 'video5',
-    aspect: 1,
-    title: 'Safe Keeping',
-    link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/a744793a62fcfec548ebe4bc0d701d68',
-    by: 'bluekirbyfi'
-  },    
+  },  
   {
     src: 'video9',
     aspect: 654 / 820,
