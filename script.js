@@ -34,7 +34,7 @@ const emojiProps = [
 ]
 const itemProps = [
   {
-    src: 'video7',
+    src: 'videoApesTogetherStrong',
     aspect: 1,
     title: 'Apes Together Strong',
     link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/89682699f426e944a4deb92b78d76a0f',
@@ -57,21 +57,21 @@ const itemProps = [
     scale: 2,
   },
   {
-    src: 'video2',
+    src: 'videoKirbyKaws',
     aspect: 1,
     title: '数人が理解',
     link: 'https://gallery.so/nft/0x103c167386dbc3d73c208e3e89ef0c79e7a44f60/1',
     by: 'pplpleasr',
   },
   {
-    src: 'video3',
+    src: 'videoPickle',
     aspect: 600 / 450,
     by: 'pplpleasr',
     title: 'すごい!!!',
     link: 'https://gallery.so/nft/0x103c167386dbc3d73c208e3e89ef0c79e7a44f60/16',
   }, 
   {
-    src: 'video8',
+    src: 'videoXYK',
     aspect: 824 / 456,
     title: 'x*y=k',
     link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/b20ec30974c2646877e1e4a8adedacb1',
@@ -122,7 +122,7 @@ const itemProps = [
     by: 'plsA0k1'
   },
   {
-    src: 'img/11.jpg',
+    src: 'img/wutang.jpg',
     aspect: 1,
     title: 'Once Upon a Time in Shaolin',
     link: 'https://pleasr.mirror.xyz/PTzSIYe6LbNW55i_Jo4S_fgqIiDp3d7YblpikQ1iRks',
