@@ -115,6 +115,34 @@ const itemProps = [
     scale: 2,
   },
   {
+    src: 'videoFortune',
+    aspect: 591 / 788,
+    title: 'chad 2',
+    link: 'https://opensea.io/assets/0x89ecbeb233aa34c88c5d7d02d8113726dbc1bc78/2',
+    by: 'Fortune Media'
+  },
+  {
+    src: 'videoEthDoc',
+    aspect: 500 / 750,
+    title: 'Ethereum: The Infinite Garden',
+    link: 'https://ethereumfilm.mirror.xyz/3SV8gLXHIW8Ot45h3RL7aOgDINxN2hjLfFVOvyatB2A',
+    by: 'Ethereum Film'
+  },
+  {
+    src: 'img/virginmary.jpg',
+    aspect: 625 / 606,
+    title: 'VIRGIN MARY, PLEASE BECOME A FEMINIST',
+    link: 'https://opensea.io/assets/0xb932a70a57673d89f4acffbe830e8ed7f75fb9e0/28956',
+    by: 'pussyriot'
+  },
+  {
+    src: 'videoSerendipity',
+    aspect: 540 / 630,
+    title: 'Serendipity',
+    link: 'https://opensea.io/assets/0xa27a7f8963cd32de837a58fabf94ad8430dfd975/1',
+    by: 'plsA0k1'
+  },
+  {
     src: 'img/11.jpg',
     aspect: 1,
     title: 'Once Upon a Time in Shaolin',
