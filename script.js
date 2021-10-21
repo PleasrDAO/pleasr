@@ -103,7 +103,7 @@ const itemProps = [
   {
     src: 'videoEthDoc',
     aspect: 500 / 750,
-    title: 'co-executive gardener',
+    title: 'Ethereum: The Infinite Garden - co-executive gardener',
     link: 'https://ethereumfilm.mirror.xyz/3SV8gLXHIW8Ot45h3RL7aOgDINxN2hjLfFVOvyatB2A',
     by: 'pplpleasr'
   },
