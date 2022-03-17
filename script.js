@@ -135,6 +135,13 @@ const itemProps = [
     link: 'https://www.christies.com/features/first-wikipedia-edit-to-be-sold-as-nft-11983-1.aspx',
     by: 'Jimmy Wales'
   }
+  {
+    src: 'img/car-remote.jpg',
+    aspect: 1,
+    title: 'CAR // 0001',
+    link: 'https://opensea.io/assets/0xa80617371a5f511bf4c1ddf822e6040acaa63e71/1',
+    by: 'shl0ms'
+  }
 ]
 
 window.addEventListener('load', () => {
