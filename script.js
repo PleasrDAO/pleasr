@@ -128,6 +128,13 @@ const itemProps = [
     link: 'https://pleasr.mirror.xyz/PTzSIYe6LbNW55i_Jo4S_fgqIiDp3d7YblpikQ1iRks',
     by: 'Wu-Tang Clan'
   }
+  {
+    src: 'img/wikipedia.jpg',
+    aspect: 1,
+    title: 'The Birth of Wikipedia',
+    link: 'https://www.christies.com/features/first-wikipedia-edit-to-be-sold-as-nft-11983-1.aspx',
+    by: 'Jimmy Wales'
+  }
 ]
 
 window.addEventListener('load', () => {
