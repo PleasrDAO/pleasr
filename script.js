@@ -144,7 +144,7 @@ const itemProps = [
   }
 ]
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   if (!initialized) {
     initialized = true;
   }
