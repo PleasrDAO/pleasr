@@ -9,25 +9,25 @@ let scrollBoost = 0;
 const emojiProps = [
   {
     src: 'img/emoji/chilis@2x.png',
-  },     
+  },
   {
     src: 'img/emoji/frog@2x.png',
-  },       
+  },
   {
     src: 'img/emoji/rocket@2x.png',
-  },     
+  },
   {
     src: 'img/emoji/unicorn@2x.png',
   },
   {
     src: 'img/emoji/cone@2x.png',
-  },       
+  },
   {
     src: 'img/emoji/headphones@2x.png',
-  }, 
+  },
   {
     src: 'img/emoji/silverback@2x.png',
-  }, 
+  },
   {
     src: 'img/emoji/sushi@2x.png',
   },
@@ -69,21 +69,21 @@ const itemProps = [
     by: 'pplpleasr',
     title: 'すごい!!!',
     link: 'https://gallery.so/nft/0x103c167386dbc3d73c208e3e89ef0c79e7a44f60/16',
-  }, 
+  },
   {
     src: 'videoXYK',
     aspect: 824 / 456,
     title: 'x*y=k',
     link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/b20ec30974c2646877e1e4a8adedacb1',
     by: 'pplpleasr',
-  },  
+  },
   {
     src: 'video6',
     aspect: 500 / 606,
     title: 'ETH Bruh',
     link: 'https://gallery.so/pleasrdao/88e17512d861358bac33a3310b6d65cf/32a6a539a02e4f20f995391f1a940174',
     by: 'pplpleasr',
-  },  
+  },
   {
     src: 'video9',
     aspect: 654 / 820,
@@ -95,7 +95,7 @@ const itemProps = [
   },
   {
     src: 'videoFortune',
-    aspect: 591 / 788,
+    aspect: 960 / 1280,
     title: 'chad 2',
     link: 'https://opensea.io/assets/0x89ecbeb233aa34c88c5d7d02d8113726dbc1bc78/2',
     by: 'Fortune Media'
@@ -226,7 +226,7 @@ function openGalleryItem(item) {
   */
 let cameraRadius = 3;
 let cameraStartPosition = {
-  x: 0, 
+  x: 0,
   y: 0,
   z: cameraRadius
 };
@@ -315,28 +315,33 @@ for (let i=0; i < emojiCount; i++) {
 function createItem(i) {
   setTimeout(() => {
     const props = itemProps[i];
-    const texture = props.src.substr(-3) === 'jpg' || props.src.substr(-3) === 'png' || props.src.substr(-4) === 'webp' ? new THREE.TextureLoader().load( props.src ) : new THREE.VideoTexture( document.getElementById( props.src ) );
+    const texture = props.src.endsWith('jpg') || props.src.endsWith('png') || props.src.endsWith('webp')
+      ? new THREE.TextureLoader().load( props.src )
+      : new THREE.VideoTexture( document.getElementById( props.src ) );
+
     const scale = props.scale ? props.scale : 1;
     const geometry = new THREE.BoxBufferGeometry(.08 * props.aspect * scale, .08 * scale, .003);
-    const material = new THREE.MeshPhongMaterial({ 
-      color: 0xffffff, 
+    const material = new THREE.MeshPhongMaterial({
+      color: 0xffffff,
       wireframe: false,
       transparent: true,
       opacity: 0,
-      map: texture
+      map: texture,
+      side: THREE.FrontSide,
+      toneMapped: false
     });
     const item = new THREE.Mesh(geometry, material);
     item.index = i;
     resetItemPosition(item);
-    
+
     itemGroup.add(item);
   }, i * 500);
 }
 
 function createStar(i) {
   const geometry = new THREE.OctahedronBufferGeometry(.0008);
-  const material = new THREE.MeshLambertMaterial({ 
-    color: 0xffffcc, 
+  const material = new THREE.MeshLambertMaterial({
+    color: 0xffffcc,
     wireframe: false,
   });
   const item = new THREE.Mesh(geometry, material);
@@ -350,8 +355,8 @@ function createEmoji(i) {
     const props = emojiProps[i];
     const texture = new THREE.TextureLoader().load( props.src );
     const geometry = new THREE.PlaneBufferGeometry(0.03, 0.03, 2);
-    const material = new THREE.MeshBasicMaterial({ 
-      color: 0xffffff, 
+    const material = new THREE.MeshBasicMaterial({
+      color: 0xffffff,
       wireframe: false,
       transparent: true,
       map: texture
@@ -359,7 +364,7 @@ function createEmoji(i) {
     const item = new THREE.Mesh(geometry, material);
     item.index = i;
     resetEmojiPosition(item);
-    
+
     emojiGroup.add(item);
   }, i * 500);
 }
@@ -413,8 +418,8 @@ function updateField() {
   for (let e = 0; e < emojiGroup.children.length; e++) {
     const item = emojiGroup.children[e];
     item.position.z += item.vz + scrollBoost;
-    item.rotation.z += item.rvz;  
-    item.material.opacity += 0.3 * (1 - item.material.opacity);  
+    item.rotation.z += item.rvz;
+    item.material.opacity += 0.3 * (1 - item.material.opacity);
     if (item.position.z > 3) {
       resetEmojiPosition(item);
     }
@@ -450,9 +455,9 @@ function resetEmojiPosition(item) {
   item.position.x = (Math.random() - 0.5) * positionRange;
   item.position.y = (Math.random() - 0.5) * positionRange;
   item.position.z = -1 + Math.random() * 2;
-  item.rotation.z = Math.random();  
+  item.rotation.z = Math.random();
   item.vz = Math.random() * 0.01 + 0.005;
-  item.rvz = Math.random() * 0.02 - 0.01;  
+  item.rvz = Math.random() * 0.02 - 0.01;
 }
 
 const render = (now) => {
